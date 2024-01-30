@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="event2.js"></script>
+    <style>
+        div#outer {width: 400px; height: 400px; border: 1px solid #333;}
+        div#inner {width: 200px; height: 200px; border: 1px solid #333;}
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <!-- default event : 아무런 이벤트 처리 없이도 스스로 이벤트 동작함 -->
+            <a href="http://www.google.com">구글로 이동</a>
+        </p>
+    </div>
+    <div id="outer">
+        <div id="inner">
+            <input type="button" value="클릭" id="btn">
+        </div>
+    </div>
+</body>
+</html>

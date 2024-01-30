@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- 
+            - action : 데이터를 전송할 서버 경로
+
+            - method : http method(데이터 전송 방식. 자바의 메소드와 다름!!). get or post 방식
+
+                    - get 방식 : 서버(웹 서버)-클라이언트(웹 브라우저) 간 데이터 전송 때, 클라이언트가 header만 보냄.
+                                (서버는 header + body 를 같이 보내야만 함. 규약임.)
+                                서버에 데이터 '요청'할 때.
+                                데이터가 header에 저장됨. 전송속도 빠름.
+                                default.
+
+                    - post 방식 : 클라이언트가 header + body 를 같이 보냄.
+                                서버에 데이터 '전송'할 때. 
+                                데이터가 body에 저장됨. 대용량 전송 때.
+        -->
+        <form action="#" method="post">
+            
+            <input type="text" name="서버에서 캐치할 변수명" value="변수의 값" />
+            <input type="text" name="s_email" value="hong@hong.com" />
+            
+            <input type="password" name="s_pw">
+            <input type="radio" name="s_gender" value="male">남
+            <input type="radio" name="s_gender" value="female">여
+            <input type="checkbox" name="s_hobby" value="취미1">취미1
+            <input type="checkbox" name="s_hobby" value="취미2">취미2
+            
+            <select name="s_select">
+
+                <option>----선택----</option>
+
+                <optgroup>
+                    <option value="am">am</option>
+                    <option value="pm">pm</option>
+                </optgroup>
+
+                <option value="a">a</option>
+                <option value="b">b</option>
+
+            </select>
+
+            <textarea name="s_memo"></textarea>
+
+            <input type="submit" value="submit 버튼에 쓰여질 글자" />
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="event1.js"></script> 
+    <!-- defer 써줘야 html 코드 선실행 -> js 후실행 -->
+    <!-- 안 썼더니 element null 뜸 -->
+</head>
+<body>
+    <div id="wrapper">
+        <p>
+            <!-- attribute 방식으로 onclick 이벤트 핸들러 등록 -->
+            <input type="button" value="btn1" id="btn1" onclick="clickBtn1();">&nbsp;
+
+            <!-- property 방식으로 -->
+            <input type="button" value="btn2" id="btn2">&nbsp;
+
+            <!-- addEventListener 방식으로 -->
+            <input type="button" value="btn3" id="btn3">
+        </p>
+    </div>
+</body>
+</html>
